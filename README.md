@@ -67,3 +67,6 @@ Feed menu connected with database. <br>
 Personal taste selection needs revision and database connection. <br>
 Tag page revision will be done soon. <br>
 Feed with uploading image.
+
+### 20.08.30.ver.
+Style suggestion .xml file is added. <br>
