@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_feed"
+        android:icon="@drawable/icon_feed_blk"
+        android:title="피드"
+        />
+
+    <item
+        android:id="@+id/menu_styleSuggestion"
+        android:icon="@drawable/icon_star_blk"
+        android:title="코디 추천"
+        />
+<!--
+    <item
+        android:id="@+id/menu_community"
+        android:icon="@drawable/icon_chat_blk"
+        android:title="커뮤니티"
+        />
+-->
+    <item
+        android:id="@+id/menu_mallSuggestion"
+        android:icon="@drawable/icon_heart_blk"
+        android:title="쇼핑몰 추천"
+        />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/icon_account_blk"
+        android:title="프로필 &amp; 설정"
+        />
+
+</menu>

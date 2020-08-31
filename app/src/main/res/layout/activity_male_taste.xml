@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorOrange"
+    tools:ignore="ExtraText"
+    tools:context=".FemaleTaste_Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:paddingBottom="15dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/colorWhite"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pickStyle_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="PICK YOUR STYLE"/>
+
+            <TextView
+                android:id="@+id/personal_taste_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="좋아하는 옷 스타일을 3가지 선택해 주세요!"
+                android:layout_below="@id/pickStyle_title"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                />
+
+            <ScrollView
+                android:id="@+id/male_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/personal_taste_direction">
+
+                <RelativeLayout
+                    android:id="@+id/male_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/button1_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/male_dandy"
+                        />
+                    <TextView
+                        android:id="@+id/button1_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="댄디"
+                        android:layout_below="@id/button1_img"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button2_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/button1_img"
+                        android:src="@drawable/male_casual"
+                        />
+                    <TextView
+                        android:id="@+id/button2_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="캐주얼"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button2_img"
+                        android:layout_toRightOf="@id/button1_txt"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button3_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/button2_img"
+                        android:src="@drawable/male_campus"
+                        />
+                    <TextView
+                        android:id="@+id/button3_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="캠퍼스"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/button3_img"
+                        android:layout_toRightOf="@id/button2_txt"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button4_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/male_hiphop"
+                        android:layout_below="@id/button1_txt"
+                        android:layout_marginTop="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/button4_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="힙합"
+                        android:layout_below="@id/button4_img"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button5_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button2_txt"
+                        android:layout_toRightOf="@id/button4_img"
+                        android:src="@drawable/male_business"
+                        />
+                    <TextView
+                        android:id="@+id/button5_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="비즈니스"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button5_img"
+                        android:layout_toRightOf="@id/button4_txt"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button6_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button3_txt"
+                        android:layout_toRightOf="@id/button5_img"
+                        android:src="@drawable/male_school"
+                        />
+                    <TextView
+                        android:id="@+id/button6_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="스클룩"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@id/button6_img"
+                        android:layout_toRightOf="@id/button5_txt"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button7_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button4_txt"
+                        android:src="@drawable/male_retro"
+                        />
+                    <TextView
+                        android:id="@+id/button7_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="레트로"
+                        android:layout_below="@id/button7_img"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button8_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button5_txt"
+                        android:layout_toRightOf="@id/button7_img"
+                        android:src="@drawable/male_trip"
+                        />
+                    <TextView
+                        android:id="@+id/button8_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="여행"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button8_img"
+                        android:layout_toRightOf="@id/button7_txt"
+                        android:gravity="center_horizontal"/>
+
+                    <ImageButton
+                        android:id="@+id/button9_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button6_txt"
+                        android:layout_toRightOf="@id/button8_img"
+                        android:src="@drawable/male_street"
+                        />
+                    <TextView
+                        android:id="@+id/button9_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="스트릿"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button9_img"
+                        android:layout_toRightOf="@id/button8_txt"
+                        android:gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:id="@+id/button10_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button7_txt"
+                        android:src="@drawable/male_date"
+                        />
+                    <TextView
+                        android:id="@+id/button10_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="데이트"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button10_img"
+                        android:gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:id="@+id/button11_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button8_txt"
+                        android:layout_toRightOf="@id/button10_img"
+                        android:src="@drawable/male_youth"
+                        />
+                    <TextView
+                        android:id="@+id/button11_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="유스"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button11_img"
+                        android:layout_toRightOf="@id/button10_txt"
+                        android:gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:id="@+id/button12_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button9_txt"
+                        android:layout_toRightOf="@id/button11_img"
+                        android:src="@drawable/male_sports"
+                        />
+                    <TextView
+                        android:id="@+id/button12_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="스포츠"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button12_img"
+                        android:layout_toRightOf="@id/button11_txt"
+                        android:gravity="center_horizontal" />
+
+                    <ImageButton
+                        android:id="@+id/button13_img"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/button10_txt"
+                        android:src="@drawable/male_formal"
+                        />
+                    <TextView
+                        android:id="@+id/button13_txt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="포멀 "
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@id/button13_img"
+                        android:gravity="center_horizontal" />
+
+                    <Button
+                        android:id="@+id/btn_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/button12_txt"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:text="DONE!"/>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

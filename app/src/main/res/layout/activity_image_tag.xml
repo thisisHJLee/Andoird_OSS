@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageTag_Activity">
+
+    <RelativeLayout
+        android:id="@+id/tag_topBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:background="@color/fui_transparent"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_division"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/colorGray"
+        android:layout_below="@id/tag_topBtn"
+        />
+
+    <ImageView
+        android:id="@+id/tag_image"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tag_topBtn"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tag_image" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/tag_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사진에 가장 어울리는 스타일을 1개 선택하세요!"/>
+
+            <RelativeLayout
+                android:id="@+id/tag_row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag_text">
+
+                <Button
+                    android:id="@+id/tag_btn_casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#캐쥬얼룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_casual"
+                    android:text="#스트릿룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_youth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_street"
+                    android:text="#유스룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_campus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#캠퍼스룩"
+                    android:layout_toRightOf="@id/tag_btn_youth"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tag_row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag_row1">
+
+                <Button
+                    android:id="@+id/tag_btn_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#비즈니스룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_formal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_business"
+                    android:text="#포멀룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_dandy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_formal"
+                    android:text="#댄디룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_dandy"
+                    android:text="#데이트룩"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tag_row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tag_row2">
+
+                <Button
+                    android:id="@+id/tag_btn_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#학교룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_school"
+                    android:text="#스포츠룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_trip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tag_btn_sports"
+                    android:text="#여행룩"/>
+
+                <Button
+                    android:id="@+id/tag_btn_retro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tag_btn_trip"
+                    android:text="#레트로룩"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tag_row4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tag_row3">
+
+                <Button
+                    android:id="@+id/tag_btn_hiphop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#힙합룩"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
