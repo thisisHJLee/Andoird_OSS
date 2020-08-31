@@ -1,8 +1,8 @@
 # Android
-안드로이드
+안드로이드  <br>
 Project with github @skyla2692 <br>
 My first Android app building <br>
-Summer vacation 2020 <br>
+Summer vacation 2020
 
 ### Version Update History
 
